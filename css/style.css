@@ -1,0 +1,339 @@
+:root {
+    --bs-main: #1abc9c;
+    --bs-secondery: #2c3e50;
+    --bs-third:#1a252f;
+    --bs-white: #fff;
+    --default-font-size: 16px;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* Main-Icons */
+.divider-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+    width: 100%;
+}
+.divider-custom .line,
+ .divider-custom .custom-line {
+    flex: 1;
+    height: 0.25rem;
+    background-color:var(--bs-white);
+    margin-left: 1rem;
+    width: 100%;
+    max-width: 7rem;
+}
+.divider-custom .icon {
+    margin: 10px;
+    color:var(--bs-white);
+}
+.divider-custom2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+    width: 100%;
+}
+.divider-custom2 .line,
+.divider-custom2 .custom-line {
+    flex: 1;
+    height: 0.25rem;
+    background-color:var(--bs-secondery);
+    margin-left: 1rem;
+    width: 100%;
+    max-width: 7rem;
+}
+.divider-custom2 .icon {
+   margin: 10px;
+   color:var(--bs-secondery);
+}
+
+/* first section */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--bs-secondery);
+    align-items: baseline;
+}
+nav .logo h2{
+    color: var(--bs-white);
+    font-size: calc(var(--default-font-size) + 30px);
+}
+nav .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    list-style: none;
+}
+nav .navbar .nav-item a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: var(--bs-white);
+    padding: 16px;
+    transition: all ease-in-out 0.2s;
+}
+nav .navbar .nav-item a:hover {
+    color: var(--bs-main);
+}
+
+/* start heading */
+.heading {
+    background-color: var(--bs-main);
+    color: var(--bs-white);
+    text-align: center;
+    padding: 5%;
+}
+.heading .avatar {
+    width: 15rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.heading .heading-text {
+    color: var(--bs-white);
+    font-size: 4.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 2%;
+    margin-top: 0;
+}
+.heading  .subheading {
+    color: var(--bs-white);
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+}
+
+/* End heading */
+
+/* third section */
+.portfolio{
+    background-color: var(--bs-white);
+    padding: 5rem 0;
+}
+.portfolio .portfolio-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:  wrap;
+}
+.portfolio .heading{
+    background-color: var(--bs-white);
+    color: var(--bs-secondery);
+    font-size: 3.25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0%;
+    padding: 1%;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.portfolio .portfolio-container .portfolio-item {
+    width: 30%;
+    height: 50vh;
+    margin: 1% 0;
+    position: relative;
+}
+.portfolio .portfolio-container .portfolio-item img{
+    height: 50vh;
+    width: 102%;
+    border-radius: 3rem;
+}
+.portfolio 
+.portfolio-container .portfolio-item .portfolio-more{
+    background-color: var(--bs-main);
+    color: var(--bs-white);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    opacity: 0;
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 102%;
+    transition: all 0.2s ease-in-out;
+    border-radius: 3rem;
+}
+.portfolio .portfolio-container .portfolio-item:hover .portfolio-more{
+    opacity: 0.8;
+}
+.portfolio-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+ 
+/* fourth section */
+.about-section {
+    padding: 7.5rem;
+    background-color: var(--bs-main);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.about {
+    color: var(--bs-white);
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0%;
+    padding: 1%;
+    line-height: 2.5rem;
+    text-align: center;
+
+}
+.caption{
+    color: var(--bs-white);
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 3%;
+    display: flex;
+    line-height: 1.6rem;
+    text-align: left;
+}
+.about-section .download-button {
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--bs-main);
+    color: var(--bs-white);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var(--bs-white);
+    transition: all ease-in-out 0.2s;
+}
+.about-section .download-button:hover{
+    background-color: var(--bs-white);
+    color: var(--bs-main);
+}
+
+/* <!-- fifth section --> */
+.contact-section{
+    color: var(--bs-secondery);
+    font-size: 1rem;
+    padding: 10% 12% 3%;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.form .form-control{
+    width: 100%;
+    font-size: 1rem;
+    color: var(--bs-secondery);
+    background-color: var(--bs-white);
+    border: 0.125rem solid var(--bs-white);
+    border-radius: 0.5rem;
+}
+.contact-section button{
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--bs-main);
+    color: var(--bs-white);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var(--bs-white);
+    transition: all ease-in-out 0.2s;
+}
+.contact-section button:hover{
+    background-color: var(--bs-white);
+    color: var(--bs-main);
+} 
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+    display: block;
+}
+
+.success-message {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button#submitBtn {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+button#submitBtn:hover {
+    background-color: #16a085;
+}
+
+
+/* <!-- PAGE END --> */
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--bs-secondery);
+    color: var(--bs-white);
+  }
+.End-of-the-page {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--bs-secondery);
+    color: var(--bs-white);
+    text-align: center;
+}
+.End-of-the-page .location {
+    padding: 0 12px;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.End-of-the-page .location h3,
+.around-the-web h3,
+.about-freelancer h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.social-icons li {
+    display: inline-block;
+}
+.social-icons a {
+    color: var(--bs-white);
+    text-decoration: none;
+    font-size: 20px;
+}
+.social-icons a:hover {
+    color: var(--bs-main);
+}
+.about-freelancer{
+    font-size: 1.25rem;
+    font-weight: 300;
+    width: 25%;
+}
+.about-freelancer a {
+    color: var(--bs-main);
+    text-decoration: none;
+}
+
+.about-freelancer a:hover {
+    text-decoration: underline;
+}
+/*<-- Copyright-Section --> */
+.copyright {
+    background-color: var(--bs-third);
+}
